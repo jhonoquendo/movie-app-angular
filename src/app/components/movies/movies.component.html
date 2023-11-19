@@ -1,0 +1,34 @@
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img
+          src="../../../assets/netflix.png"
+          alt="Logo"
+          width="40"
+          height="40"
+        />
+      </a>
+      <span class="h3 text-white">Movies - App</span>
+      <form class="d-flex">
+        <input
+          [(ngModel)]="filterMovie"
+          name="filterMovie"
+          class="form-control me-2"
+          type="search"
+          placeholder="Buscar películas o géneros..."
+          aria-label="Buscar"
+        />
+      </form>
+    </div>
+  </nav>
+</header>
+<section class="py-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-3 mb-4" *ngFor="let movie of movies | filter:filterMovie">
+        <app-movie [movie]="movie"></app-movie>
+      </div>
+    </div>
+  </div>
+</section>

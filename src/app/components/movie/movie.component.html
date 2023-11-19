@@ -1,0 +1,17 @@
+<div class="card">
+  <img
+    src="https://image.tmdb.org/t/p/original{{ movie.poster_path }}"
+    class="card-img-top"
+    alt="movie_img"
+  />
+  <div class="card-body">
+    <h5 class="card-title">{{ movie.title }}</h5>
+    <p class="card-text">{{ movie.overview }}</p>
+    <p class="card-text">
+      <small class="text-muted">Género(s): </small>
+      <span *ngFor="let genre of movie.genre_names; let ult = last">
+        {{ genre }}{{ !ult ? ", " : "." }}
+      </span>
+    </p>
+  </div>
+</div>
