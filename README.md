@@ -25,3 +25,14 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Estructura del proyecto
+
+En el proyecto se crearon directorios diferentes para separar las tareas especificas, se crearon los siguientes directorios: 
+
+- components -> se crean componentes 
+- data
+- interfaces
+- pipes
+- services
+

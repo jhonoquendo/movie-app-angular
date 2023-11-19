@@ -10,18 +10,4 @@ import { MovieService } from '../../services/movie.service';
 export class HeaderComponent {
 
   constructor(private movieService: MovieService){}
-
-  // filtrar() {
-  //   this.movieService.cambiarFiltro(this.search);
-  // }
-
-  // filterMovies() {
-  //   this.filteredMovies = this.movies.filter(
-  //     (movie) => movie.title.toLowerCase().includes(this.search.toLowerCase()) //|| // Filtrar por nombre de película
-  //     // movie.genre_names.some((genre: string) =>
-  //     //   genre.toLowerCase().includes(this.search.toLowerCase())
-  //     // )
-  //     // Filtrar por género
-  //   );
-  // }
 }

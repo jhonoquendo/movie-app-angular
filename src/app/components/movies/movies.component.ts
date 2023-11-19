@@ -33,8 +33,6 @@ export class MoviesComponent implements OnInit {
             this.genres.genres.find((genre) => genre.id === id)?.name!
         );
       });
-
-      console.log(this.movies);
     });
   }
 }
