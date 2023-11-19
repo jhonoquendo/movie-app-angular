@@ -30,9 +30,28 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 En el proyecto se crearon directorios diferentes para separar las tareas especificas, se crearon los siguientes directorios: 
 
-- components -> se crean componentes 
-- data
-- interfaces
-- pipes
-- services
+- components -> se crean componentes para ser reutilizados mas adelante.
+- data -> se creó este directorio por si se desea importar la data directamente y ya no hacer llamada a la api externa
+- interfaces - > se crea el directorio para poder tipar las variables, etc.
+- pipes -> se crea para una tarea especifica en este caso es para filtrar las peliculas por titulo y genero.
+- services -> se encarga de hacer las llamadas a la api mediante httpClient de angular
+
+## Environment
+
+Para ejecutar el proyecto de forma local se debe crear src/environment/environment.ts
+
+y agregar los siguientes valores: 
+
+```
+export const environment = {
+  production: {},
+  development: {
+    apiUrlMovies:
+      'https://api.themoviedb.org/3/movie/popular',
+    apiUrlGenres:
+      'https://api.themoviedb.org/3/genre/movie/list',
+      apiKey: '8f6ac44cf1e5987a234187eeaf0311d5'
+  },
+};
+```
 
